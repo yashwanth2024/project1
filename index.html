@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPro Pricing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TechPro Pricing</h1>
+        <div class="currency-toggle">
+            <label for="currency">Currency:</label>
+            <select id="currency" name="currency">
+                <option value="USD">$ USD</option>
+                <option value="EUR">€ EUR</option>
+                <option value="IND">£ RS</option>
+            </select>
+        </div>
+    </header>
+    <section class="pricing-tiers">
+        <div class="pricing-card" id="basic">
+            <h2>Basic</h2>
+            <p class="price" data-usd="10" data-eur="9" data-gbp="8">$10/month</p>
+            <ul>
+                <li>5 GB cloud storage</li>
+                <li>Email support</li>
+        
+            </ul>
+            <button>Choose Basic</button>
+        </div>
+        <div class="pricing-card" id="pro">
+            <h2>Pro</h2>
+            <p class="price" data-usd="20" data-eur="18" data-gbp="16">$20/month</p>
+            <ul>
+                <li>15 GB cloud storage</li>
+                <li>Email support</li>
+            </ul>
+            <button>Choose Pro</button>
+        </div>
+        <div class="pricing-card" id="enterprise">
+            <h2>Enterprise</h2>
+            <p class="price" data-usd="50" data-eur="45" data-gbp="40">$50/month</p>
+            <ul>
+                <li>50 GB cloud storage</li>
+                <li>Email support</li>
+
+            </ul>
+            <button>Choose Enterprise</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
